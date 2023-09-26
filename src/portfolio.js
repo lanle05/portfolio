@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/lanle05",
   linkedin: "https://www.linkedin.com/in/omobolanle-shaibu-426a7b200/",
-  gmail: "omobolanle.shaibu0@gmail.com",
+  gmail: "omobolanle.shaibu@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -191,7 +191,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/movieboximage.png"),
       projectName: "Movie Search Site",
       projectDesc: "Movie app that grants user access to get the latest movies",
       footerLink: [
