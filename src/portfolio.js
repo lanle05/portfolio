@@ -117,7 +117,8 @@ const educationInfo = {
       schoolName: "ALX Africa",
       logo: require("./assets/images/alx.png"),
       subHeader: "Software Engineering Program",
-      duration: "November 2022 - August 2024"
+      duration: "November 2022 - August 2024",
+      link: "https://www.alxafrica.com/",
       // subHeader: "Bachelor of Science in Computer Science",
       // duration: "September 2013 - April 2017",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
