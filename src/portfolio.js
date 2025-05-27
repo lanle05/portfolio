@@ -1,14 +1,10 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/headshot1.jpg"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -21,12 +17,12 @@ const illustration = {
 
 const greeting = {
   username: "Omobolanle Shaibu",
-  title: "Hi all, I'm Bolanle",
+  title: "Hi, I'm Bolanle",
   subTitle: emoji(
-    "I took a gap year after secondary school to kick-start my career in tech. I am currently working as a Frontend Developer but aspire to be a Full-stack developer. I am always open to learning and finding new ways to help improve our world through technology. I am skilled in developing intuitive user interfaces and writing efficient, well-structured code. I am currently familiar with using Bootstrap, CSS, HTML, React Native, Linux and JavaScript."
+    "After graduating secondary school, I took a gap year to focus on building a strong foundation in tech. I am now a university student actively working as a Frontend Developer. I specialize in creating intuitive and responsive user interfaces, and I'm passionate about using technology to solve real-world problems. My current skill set includes React.js, JavaScript, HTML, CSS, Bootstrap, and Linux. I'm committed to continuous growth and eager to explore full-stack and cloud technologies."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1Kx-fjaBuRdj2-1LbnmcDtsSLsyFmiItu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1lJofSZs10hHaAR93lELYG1vyPW-B8ows/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -44,15 +40,20 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CURRENTLY A FRONTEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "FRONTEND DEVELOPER AND FULL-STACK DEVELOPER IN TRAINING",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
+      "⚡ Designed and built interactive, responsive user interfaces using React.js and JavaScript."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase."
+      "⚡ Developed Progressive Web Apps (PWAs) with modern frontend stacks."
+    ),
+    emoji(
+      "⚡ Integrated third-party services including Firebase for authentication and real-time database needs."
+    ),
+    emoji(
+      "⚡ Continuously learning new technologies to transition into full-stack development."
     )
   ],
 
@@ -91,7 +92,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -99,26 +100,28 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Babcock University",
+      logo: require("./assets/images/babcock.jpg"),
+      subHeader: "Bachelor of Science in Computer Science",
+      duration: "September 2023 - Present"
+      // desc: "Participated in the research of XXX and published 3 papers.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "ALX Africa",
+      logo: require("./assets/images/alx.png"),
+      subHeader: "Software Engineering Program",
+      duration: "November 2022 - August 2024"
+      // subHeader: "Bachelor of Science in Computer Science",
+      // duration: "September 2013 - April 2017",
+      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -129,12 +132,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
+      Stack: "Frontend Development (HTML, CSS, JavaScript, React.js)",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Linux",
-      progressPercentage: "50%"
+      Stack: "Version Control (Git & GitHub)",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Linux & Shell Scripting",
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -145,16 +152,16 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    {
-      role: "Software Engineer",
-      company: "ALX Africa",
-      companylogo: require("./assets/images/alx.png"),
-      date: "November 2022 – Present",
-      desc: "Full-stack Software Engineer Intern",
-      descBullets: [
-        "Worked with Linux, Shell Scripting, Javascript and Python",
-      ]
-    },
+    // {
+    //   role: "Software Engineer",
+    //   company: "ALX Africa",
+    //   companylogo: require("./assets/images/alx.png"),
+    //   date: "November 2022 – Present",
+    //   desc: "Full-stack Software Engineer Intern",
+    //   descBullets: [
+    //     "Worked with Linux, Shell Scripting, Javascript and Python",
+    //   ]
+    // },
     {
       role: "Front-End Developer Intern",
       company: "Bluechip Technologies",
@@ -166,13 +173,13 @@ const workExperiences = {
         "Help build multiple static pages for various projects in the company like a Learning management system app, an e-commerce app and a banking app.",
         "I also assisted with administrative duties such as managing the budget for the month and shopping for supplies for the month."
       ]
-    },
-    {
-      role: "Frontend Developer Intern",
-      company: "HNGx",
-      companylogo: require("./assets/images/hng internship logo.jpeg"),
-      date: "September 2023 – Current",
     }
+    // {
+    //   role: "Frontend Developer Intern",
+    //   company: "HNGx",
+    //   companylogo: require("./assets/images/hng internship logo.jpeg"),
+    //   date: "September 2023 – Current",
+    // }
   ]
 };
 
@@ -181,27 +188,40 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle:
+    "Solo-built products that reflect my journey, creativity, and growth as a developer",
   projects: [
     {
-      image: require("./assets/images/movieboximage.png"),
-      projectName: "Movie Search Site",
-      projectDesc: "Movie app that grants user access to get the latest movies",
+      image: require("./assets/images/galleryimage.png"),
+      projectName: "Language-Learning Flashcard App",
+      projectDesc:
+        "Language Learning Flashcard App Designed and built a language learning app using React and Tailwind CSS. Users can create custom flashcard decks or generate random ones to practice vocabulary. The dashboard tracks learning progress and stores saved decks locally for continued learning.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://movie-box-lanle05.vercel.app/"
+          url: "https://language-learning-flashcard-app.vercel.app/dashboard"
         }
-        //  you can add extra buttons here.
       ]
     },
+    // {
+    //   image: require("./assets/images/movieboximage.png"),
+    //   projectName: "Movie Search Site",
+    //   projectDesc: "Movie app that grants user access to get the latest movies",
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: "https://movie-box-lanle05.vercel.app/"
+    //     }
+    //     //  you can add extra buttons here.
+    //   ]
+    // },
     {
       image: require("./assets/images/galleryimage.png"),
       projectName: "Drag and Drop Gallery",
