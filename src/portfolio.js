@@ -1,10 +1,10 @@
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/headshot1.jpg"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation.json"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
-  enabled: false, // set false to disable splash screen
+  enabled: true, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -12,7 +12,7 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
@@ -200,7 +200,7 @@ const bigProjects = {
     "Solo-built products that reflect my journey, creativity, and growth as a developer",
   projects: [
     {
-      image: require("./assets/images/galleryimage.png"),
+      image: require("./assets/images/flashcard.png"),
       projectName: "Language-Learning Flashcard App",
       projectDesc:
         "Language Learning Flashcard App Designed and built a language learning app using React and Tailwind CSS. Users can create custom flashcard decks or generate random ones to practice vocabulary. The dashboard tracks learning progress and stores saved decks locally for continued learning.",
@@ -208,6 +208,10 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://language-learning-flashcard-app.vercel.app/dashboard"
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/lanle05/lanle05-language-learning-flashcard-app-portfolio"
         }
       ]
     },
@@ -226,11 +230,17 @@ const bigProjects = {
     {
       image: require("./assets/images/galleryimage.png"),
       projectName: "Drag and Drop Gallery",
-      projectDesc: "Simple Gallery Website with movable images",
+      projectDesc:
+        "A fully responsive and user-friendly image gallery built with React. Authenticated users can log in and rearrange images using a drag-and-drop interface. The gallery includes search functionality by image tags, skeleton loaders while fetching images, smooth animations for feedback, and proper form validation with error handling. Login Credentials: Username: user@example.com, Password: 1Password",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://drag-and-drop-3symx92y4-lanle05.vercel.app/"
+        },
+
+        {
+          name: "GitHub",
+          url: "https://github.com/lanle05/drag_and_drop"
         }
       ]
     }
@@ -367,7 +377,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "lanle_xoxoxo", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
