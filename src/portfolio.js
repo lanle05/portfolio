@@ -22,7 +22,7 @@ const greeting = {
     "After graduating secondary school, I took a gap year to focus on building a strong foundation in tech. I am now a university student actively working as a Frontend Developer. I specialize in creating intuitive and responsive user interfaces, and I'm passionate about using technology to solve real-world problems. My current skill set includes React.js, JavaScript, HTML, CSS, Bootstrap, and Linux. I'm committed to continuous growth and eager to explore full-stack and cloud technologies."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1lJofSZs10hHaAR93lELYG1vyPW-B8ows/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1wx6aXTXfbHPxAZLZaKXymxEtJz68pmbw/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
